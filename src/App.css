@@ -1,0 +1,207 @@
+.scroll {
+    animation-name: scroll;
+    animation-duration: 0.7s;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.nav .item:hover, .Intro .item:hover, .Intro button:hover {
+    color: black;
+    background-color: white;
+}
+
+.Intro button {
+    height: 50px;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.Intro {
+    display: flex;
+    height: 50px;
+}
+
+.nav .item, .Intro .item {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;}
+    
+    header .Icon {
+        display: flex;
+        justify-content: center;}
+    
+        header .Icon #abbr {
+            color: #DB2A2B;
+            font-size: xx-large;
+            cursor: pointer;
+            font-weight: 900;}
+
+        header .Icon #full {
+            font-size: small;
+            width: 100px;
+            padding-top: 10px;
+            padding-left: 10px;}
+
+    header .nav {
+        font-size: small;
+        list-style-type: none;
+        cursor: pointer;
+        display: flex;}
+
+        header .nav .item {
+            padding-left: 15px;
+            padding-right: 15px;}
+
+    header .Intro {
+        border-left: 2px solid gray;}
+
+        header .Intro * {
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: black;
+            color: white;
+            border: none;}
+
+#body {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    color: white;}
+
+    #body #rightSideText {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: inherit;}
+
+        #body #rightSideText img {
+            vertical-align: top;
+            transform: scale(1.01);
+            width: 200%;
+            position: relative;
+            left: -100%;
+            z-index: -1;
+            height: auto;}
+
+#navUnderBody {
+    background: black;
+    padding: 20px;
+    color: white;}
+
+    #cards {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;}
+
+        #cards #card {
+            width: 100px;
+            height: 150px;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 0.4em;
+            background-color: rgb(40, 40, 40);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;}
+
+            #cards #card #text {
+                margin-bottom: 20px;
+                font-size: x-large;
+                font-weight: 600;
+                color: orange;}
+
+            #cards #card #type {
+                font-size: x-small;}
+
+#animationSection {
+    height: 565px;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;}
+
+    #animationSection #background {
+        width: 100%;
+        height: 565px;}
+        
+        #animationSection #background #player-container {
+            transform: scale(1.6);
+            position: relative;
+            top: 100px;
+            height: 565px;
+            border-radius: 0%;}
+
+    #animationSection #foreground {
+        position: relative;
+        top: -565px;
+        width: 100%;
+        height: 565px;
+        display: flex;
+        justify-content: center;}
+
+        #animationSection #invisibleLeft {
+            width: 50%;}
+
+        #animationSection #partiallyVisibleRight {
+            width: 50%;
+            background-color: rgba(0, 0, 0, .5);
+            color: white;
+            padding: 50px;}
+
+            #animationSection #partiallyVisibleRight .Yes:hover {
+                background-color: #BB0A0B;
+            }
+
+            #animationSection #partiallyVisibleRight .Yes {
+                background-color: #DB2A2B;
+                transition: background 0.5s ease-in-out;
+                margin: 5px;
+                color: white;
+                border: none;
+                border-radius: 0.4em;
+                width: 140px;
+                padding: 10px;}
+    
+            #animationSection #partiallyVisibleRight .No:hover {
+                background-color: white;
+                color: black;
+            }
+            
+            #animationSection #partiallyVisibleRight .No {
+                background-color: rgba(255, 255, 255, 0);
+                transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+                color: white;
+                margin: 5px;
+                border: 2px solid white;
+                border-radius: 0.4em;
+                width: 120px;
+                padding: 8px;}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #000000;
+    color: white;
+}
+* {
+    font-family: sans-serif;
+}
