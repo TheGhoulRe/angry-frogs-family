@@ -4,14 +4,14 @@ import Vid from "../assets/bigvid.mp4";
 function SpineItem () {
     useEffect(() => {
         let t = setInterval(() => {
-            document.getElementById("player-container").oncanplay = () => {
+            document.getElementById("player-container").oncanplaythrough = () => {
                 document.getElementById("player-container").play();
                 clearInterval(t);
             }
-        });
-    }, 100);
+        }, 1000);
+    }, []);
   
-    return <div id="background" style={img()}>
+    return <div id="background" style={bodySpineStyle()}>
         <video src={Vid} id="player-container" style={img()}></video>
     </div>
 }
@@ -19,14 +19,15 @@ function SpineItem () {
 
 function img() {
     return {
-        transform: "scale(1.35)",
+        // transform: "scale(1.35)",
+        width: "100%",
     }
 }
 
 function bodySpineStyle() {
     return {
         width: "100%",
-        height: "100%"
+        overflow: "hidden",
     }
 }
 

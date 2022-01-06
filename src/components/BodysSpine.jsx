@@ -3,15 +3,19 @@ import Vid from "../assets/bigvid.mp4";
 
 function BodysSpine () {
     useEffect(() => {
+        let player = document.getElementById("player-container")
+        
         let t = setInterval(() => {
-            document.getElementById("player-container").oncanplay = () => {
-                document.getElementById("player-container").play();
-                clearInterval(t);
-            }
-        });
-    }, 100);
+            player.play();
+            
+        }, 1000);
+        
+        player.onplay = () => {
+            clearTimeout(t);
+        }
+    }, []);
   
-    return <div id="background" style={img()}>
+    return <div style={bodySpineStyle()}>
         <video src={Vid} id="player-container" style={img()}></video>
     </div>
 }
@@ -19,15 +23,21 @@ function BodysSpine () {
 
 function img() {
     return {
-        transform: "scale(1.35)",
+        transform: "scaleX(1.50) scaleY(1.50) translateY(80px)",
+        width: "100%",
+        height: "500px",
     }
 }
 
 function bodySpineStyle() {
     return {
+        zIndex: "-1",
         width: "100%",
-        height: "100%"
+        height: "500px",
+        diplay: "flex",
+        justifyContent: "center",
+        // overflow: "hidden",
     }
 }
 
-export default BodysSpine;
+export default BodysSpine;  

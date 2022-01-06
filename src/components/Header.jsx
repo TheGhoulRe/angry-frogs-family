@@ -6,7 +6,7 @@ function Header({Key, globe, links, services, pages, langs}) {
     let [servicesToggle, setServicesToggle] = useState(false);
     let [pagesToggle, setPagesToggle] = useState(false);
 
-    return <header>
+    return <header style={{ padding: "0px" }}>
         <div className="Icon">
             <div id="abbr" onClick={() => document.location.assign("/") }>AFF</div>
             <div id="full">ANGRY FROGS FAMILY</div>
@@ -93,6 +93,9 @@ function listItem() {
     return {
         fontSize: "large",
         cursor: "pointer",
+        paddingTop: "10px",
+        paddingBottom: "10px",
+        zIndex: "1000",
     }
 }
 

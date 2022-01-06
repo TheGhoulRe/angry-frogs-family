@@ -64,6 +64,8 @@ header {
         font-size: small;
         list-style-type: none;
         cursor: pointer;
+        padding: 0px;
+        margin: 0px;
         display: flex;}
 
         header .nav .item {

@@ -72,7 +72,7 @@ function anySide() {
 function imgStyle(width) {
     return {
         margin: "10px",
-        width: (width < 200 ? 200 : width) + "px",
+        width: "200px",
     }
 }
 

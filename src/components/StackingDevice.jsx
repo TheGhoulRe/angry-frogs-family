@@ -42,7 +42,6 @@ function StackingDevice () {
 
 function stackingDevice() {
     return {
-        width: "100%",
         height: "400px",
         display: "flex",
         padding: "20px",
