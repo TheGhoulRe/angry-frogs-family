@@ -14,6 +14,11 @@
     }
 }
 
+#popup #popupItem:hover {
+    background-color: white;
+    color: black;
+}
+
 .nav .body #popup {
     display: none;
 }

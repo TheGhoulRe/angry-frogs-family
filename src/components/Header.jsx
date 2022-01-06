@@ -21,7 +21,7 @@ function Header({Key, globe, links, services, pages, langs}) {
                 <div style={popup()} id="popup">
                     {
                         services.map((val, i) => {
-                            return <div key={i} style={listItem()} onClick={() => document.location.assign(val[1]) }>
+                            return <div key={i} id='popupItem' style={listItem()} onClick={() => document.location.assign(val[1]) }>
                                 {val[0]}
                             </div>
                         })
@@ -38,7 +38,7 @@ function Header({Key, globe, links, services, pages, langs}) {
                 <div style={popup()} id="popup">
                     {
                         pages.map((val, i) => {
-                            return <div key={i} style={listItem()} onClick={() => document.location.assign(val[1]) }>
+                            return <div key={i} id='popupItem' style={listItem()} onClick={() => document.location.assign(val[1]) }>
                                 {val[0]}
                             </div>
                         })
@@ -92,6 +92,8 @@ function listItem() {
         cursor: "pointer",
         paddingTop: "10px",
         paddingBottom: "10px",
+        paddingLeft: "20px",
+        transition: "background-color 0.2s linear, color 0.2s linear"
     }
 }
 
@@ -99,10 +101,10 @@ function popup() {
     return {
         position: "fixed",
         width: "400px",
-        padding: "20px",
+        paddingTop: "20px",
+        paddingBottom: "20px",
         borderBottomLeftRadius: "20px",
         borderBottomRightRadius: "20px",
-        borderTopRightRadius: "20px",
         backgroundColor: "#000000",
     }
 }
