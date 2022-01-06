@@ -2,13 +2,11 @@ import PreText from './PreText';
 import JoinOrDiscord from "./JoinOrDiscord";
 import HeaderBanner from "../assets/HeaderBanner.svg";
 import BodysSpine from './BodysSpine';
-import { useState } from 'react';
 import { useEffect } from 'react';
 
 function Body({header1, header2, body, preText, otherImages}) {
 
     let {texts, images, colors, links} = preText;
-    let [FrogsBanner] = otherImages;
 
     useEffect(() => {
         document.getElementById("body").style.paddingTop = document.getElementsByTagName("header")[0].offsetHeight + "px";
