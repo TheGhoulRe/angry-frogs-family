@@ -16,7 +16,7 @@ function Roadmap({questions, answers, states, images, toggle, toggle2, points}) 
                         <div style={questionStyle()}>
                             <div style={container()}>
                                 <div>{questions[i]}</div>
-                                <div onClick={() => toggle(i) }><img src={states[i] ? plus : minus} alt="" style={questionImg()}/></div>
+                                <div onClick={() => toggle(i) }><img src={!states[i] ? plus : minus} alt="" style={questionImg()}/></div>
                             </div>
                             
                             {states[i] && <p style={answerText()}>{answers[i]}</p>}

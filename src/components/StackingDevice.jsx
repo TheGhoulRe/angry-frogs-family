@@ -32,15 +32,21 @@
 
 /*******   If the error above is uncomment the above and comment the below  ******/
 
-import StackingDeviceImg from '../assets/StackingDevice.png';
+import StackingDeviceImg from '../assets/StackingDevice.gif';
 
 function StackingDevice () {
-    return <img src={StackingDeviceImg} alt="" id="aniStackingDevice" style={stackingDevice()} />
+    return <div id="aniStackingDevice" style={{backgroundColor: "white", ...stackingDevice()}} >
+        <img src={StackingDeviceImg} alt="" />
+    </div> 
 }
 
 function stackingDevice() {
     return {
         width: "100%",
+        height: "400px",
+        display: "flex",
+        padding: "20px",
+        justifyContent: "center",
     }
 }
 

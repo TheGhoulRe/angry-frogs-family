@@ -1,29 +1,21 @@
-
 import { useEffect } from "react";
+import Vid from "../assets/bigvid.mp4";
 
 function BodysSpine () {
     useEffect(() => {
-        let scriptTag = document.createElement("script");
-        scriptTag.innerHTML = `
-            new spine.SpinePlayer("body-spine", {
-                jsonUrl: "./assets/Frog Gangster Firing 04.json",
-                atlasUrl: "./assets/Frog Gangster Firing 04.atlas",
-
-                showControls: false,
-                // animation: "shoot",
-            });
-        `;
-        document.body.appendChild(scriptTag);
-
-        return () => {
-            document.body.removeChild(scriptTag);
-        }
-    });
+        let t = setInterval(() => {
+            document.getElementById("player-container").oncanplay = () => {
+                document.getElementById("player-container").play();
+                clearInterval(t);
+            }
+        });
+    }, 100);
   
-    return <div style={bodySpineStyle()} id="bg">
-        <div id="body-spine" style={img()}></div>
+    return <div id="background" style={img()}>
+        <video src={Vid} id="player-container" style={img()}></video>
     </div>
 }
+
 
 function img() {
     return {

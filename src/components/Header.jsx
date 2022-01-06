@@ -91,8 +91,6 @@ function lang() {
 
 function listItem() {
     return {
-        paddingTop: "10px",
-        paddingBottom: "10px",
         fontSize: "large",
         cursor: "pointer",
     }
