@@ -80,12 +80,7 @@ header {
             color: white;
             border: none;}
 
-#body {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    overflow: hidden;
-    color: white;}
+
 
     #body #rightSideText {
         width: 50%;

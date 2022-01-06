@@ -1,43 +1,63 @@
 import PreText from './PreText';
 import JoinOrDiscord from "./JoinOrDiscord";
 import HeaderBanner from "../assets/HeaderBanner.svg";
+import BodysSpine from './BodysSpine';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function Body({header1, header2, body, preText, otherImages}) {
 
     let {texts, images, colors, links} = preText;
     let [FrogsBanner] = otherImages;
 
-    return (
-        <div id="body" style={bodyStyle()}>
-            <div style={preTextStyle()}>
-                {
-                    [0, 1, 2].map(val => {
-                        return <PreText key={val} text={texts[val]} image={images[val]} color={colors[val]} onClick={() => document.location.assign(links[val]) } />;
-                    })
-                }
-            </div>
-            <div style={boxContainer()}>
-                <div style={introBox()}>
-                    <div style={offsetText()}>
-                        <div style={headerText()}>{header1}</div>
-                        <div style={underPart()}>
-                            <img src={HeaderBanner} alt="" />
-                            <div></div>
-                        </div>
-                    </div>
+    useEffect(() => {
+    }, []);
 
-                    <h1>{header2}</h1>
-                    <p>{body}</p>
-                    
-                    <JoinOrDiscord />
+    return (
+        <div id="body" style={bodyContainer()}>
+            <BodysSpine />
+            <div style={bodyStyle()}>
+                <div style={preTextStyle()}>
+                    {
+                        [0, 1, 2].map(val => {
+                            return <PreText key={val} text={texts[val]} image={images[val]} color={colors[val]} onClick={() => document.location.assign(links[val]) } />;
+                        })
+                    }
                 </div>
-            </div>
-            
-            <div id="rightSideText">
-                <img src={FrogsBanner} alt="frog's banner" />
+                <div style={boxContainer()}>
+                    <div style={introBox()}>
+                        <div style={offsetText()}>
+                            <div style={headerText()}>{header1}</div>
+                            <div style={underPart()}>
+                                <img src={HeaderBanner} alt="" />
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <h1>{header2}</h1>
+                        <p>{body}</p>
+                        
+                        <JoinOrDiscord />
+                    </div>
+                </div>
+                
+                <div id="rightSideText">
+                    {/* <img src={FrogsBanner} alt="frog's banner" /> */}
+                </div>
             </div>
         </div>
     );
+}
+
+function bodyContainer() {
+    return {
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+        height: "500px",
+        overflow: "hidden",
+        color: "white",
+    }
 }
 
 function headerText() {
@@ -74,6 +94,11 @@ function offsetText() {
 function bodyStyle() {
     return {
         backgroundColor: "#3232325C",
+        display: "flex",
+        justifyContent: "space-around",
+        height: "500px",
+        position: "relative",
+        top: "-500px",         // Re-renders 3 times (apparently) and the amount keeps on increasing with each render
     }
 }
 

@@ -9,7 +9,7 @@ function SpineItem () {
                 atlasUrl: "./assets/Frog Gangster Firing 04.atlas",
 
                 showControls: false,
-                animation: "shoot",
+                // animation: "shoot",
             });
         `;
         document.body.appendChild(scriptTag);
@@ -18,7 +18,7 @@ function SpineItem () {
             document.body.removeChild(scriptTag)
         }
     });
-
+  
     return <div id="background">
         <div id="player-container"></div>
     </div>

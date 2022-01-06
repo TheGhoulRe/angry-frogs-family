@@ -57,6 +57,7 @@ function preLoaderStyle(scale, display, opacity) {
         flexDirection: "column",
         transform: scale,
         display, opacity,
+        zIndex: "1000",
         transition: "transform 1s linear, opacity 1s linear",
     }
 }

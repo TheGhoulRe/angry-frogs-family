@@ -1,0 +1,517 @@
+
+Stacking device 06.png
+size: 3064,2248
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Anteni 1
+  rotate: true
+  xy: 2528, 24
+  size: 20, 66
+  orig: 20, 66
+  offset: 0, 0
+  index: -1
+Anteni 2
+  rotate: true
+  xy: 2462, 46
+  size: 19, 137
+  orig: 19, 137
+  offset: 0, 0
+  index: -1
+Anteni 2 copy
+  rotate: false
+  xy: 2847, 640
+  size: 10, 50
+  orig: 10, 50
+  offset: 0, 0
+  index: -1
+Back
+  rotate: false
+  xy: 2, 1381
+  size: 1537, 865
+  orig: 1537, 865
+  offset: 0, 0
+  index: -1
+Background
+  rotate: false
+  xy: 2, 514
+  size: 1537, 865
+  orig: 1537, 865
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 1646, 2
+  size: 131, 131
+  orig: 131, 131
+  offset: 0, 0
+  index: -1
+Bott
+  rotate: false
+  xy: 468, 8
+  size: 212, 134
+  orig: 212, 134
+  offset: 0, 0
+  index: -1
+Cap
+  rotate: false
+  xy: 2933, 1885
+  size: 115, 57
+  orig: 115, 57
+  offset: 0, 0
+  index: -1
+Chair
+  rotate: true
+  xy: 2008, 526
+  size: 221, 308
+  orig: 221, 308
+  offset: 0, 0
+  index: -1
+Device front
+  rotate: false
+  xy: 1541, 1136
+  size: 752, 513
+  orig: 752, 513
+  offset: 0, 0
+  index: -1
+Hands
+  rotate: true
+  xy: 2954, 261
+  size: 151, 74
+  orig: 151, 74
+  offset: 0, 0
+  index: -1
+Items
+  rotate: false
+  xy: 1541, 749
+  size: 766, 385
+  orig: 766, 385
+  offset: 0, 0
+  index: -1
+Korpus
+  rotate: false
+  xy: 1541, 1651
+  size: 770, 595
+  orig: 770, 595
+  offset: 0, 0
+  index: -1
+Layer 130
+  rotate: true
+  xy: 3006, 1305
+  size: 58, 56
+  orig: 58, 56
+  offset: 0, 0
+  index: -1
+Layer 133
+  rotate: true
+  xy: 3006, 1257
+  size: 46, 56
+  orig: 46, 56
+  offset: 0, 0
+  index: -1
+Layer 162
+  rotate: false
+  xy: 2956, 1365
+  size: 67, 54
+  orig: 67, 54
+  offset: 0, 0
+  index: -1
+Layer 235
+  rotate: false
+  xy: 2613, 58
+  size: 134, 69
+  orig: 134, 69
+  offset: 0, 0
+  index: -1
+Layer 236
+  rotate: false
+  xy: 2295, 1177
+  size: 299, 421
+  orig: 299, 421
+  offset: 0, 0
+  index: -1
+Layer 244
+  rotate: false
+  xy: 1169, 2
+  size: 98, 52
+  orig: 98, 52
+  offset: 0, 0
+  index: -1
+Layer 245
+  rotate: false
+  xy: 1169, 56
+  size: 102, 75
+  orig: 102, 75
+  offset: 0, 0
+  index: -1
+Layer 255
+  rotate: false
+  xy: 2, 5
+  size: 464, 137
+  orig: 464, 137
+  offset: 0, 0
+  index: -1
+Layer 258
+  rotate: true
+  xy: 2596, 1227
+  size: 371, 96
+  orig: 371, 96
+  offset: 0, 0
+  index: -1
+Layer 260
+  rotate: false
+  xy: 1273, 53
+  size: 85, 46
+  orig: 85, 46
+  offset: 0, 0
+  index: -1
+Prib
+  rotate: true
+  xy: 2261, 173
+  size: 162, 185
+  orig: 162, 185
+  offset: 0, 0
+  index: -1
+Stairs
+  rotate: false
+  xy: 2449, 369
+  size: 166, 166
+  orig: 166, 166
+  offset: 0, 0
+  index: -1
+Wholes
+  rotate: false
+  xy: 890, 133
+  size: 754, 379
+  orig: 754, 379
+  offset: 0, 0
+  index: -1
+collor
+  rotate: false
+  xy: 1269, 5
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 1541, 514
+  size: 87, 13
+  orig: 87, 13
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 1273, 101
+  size: 116, 30
+  orig: 116, 30
+  offset: 0, 0
+  index: -1
+eyelid
+  rotate: true
+  xy: 2981, 1245
+  size: 118, 23
+  orig: 118, 23
+  offset: 0, 0
+  index: -1
+fan/GreenCenter
+  rotate: false
+  xy: 2619, 935
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+fan/blue1Center
+  rotate: false
+  xy: 2694, 1365
+  size: 260, 226
+  orig: 260, 226
+  offset: 0, 0
+  index: -1
+fan/blue1Center sm
+  rotate: false
+  xy: 2617, 280
+  size: 182, 182
+  orig: 182, 182
+  offset: 0, 0
+  index: -1
+fan/blue2Center
+  rotate: false
+  xy: 2617, 280
+  size: 182, 182
+  orig: 182, 182
+  offset: 0, 0
+  index: -1
+fan/green1Center
+  rotate: false
+  xy: 2617, 280
+  size: 182, 182
+  orig: 182, 182
+  offset: 0, 0
+  index: -1
+fan/redCenter
+  rotate: false
+  xy: 2617, 280
+  size: 182, 182
+  orig: 182, 182
+  offset: 0, 0
+  index: -1
+fan/blue1Cooler
+  rotate: true
+  xy: 2862, 977
+  size: 199, 200
+  orig: 199, 200
+  offset: 0, 0
+  index: -1
+fan/blue1Cooler sm
+  rotate: false
+  xy: 2449, 218
+  size: 149, 149
+  orig: 149, 149
+  offset: 0, 0
+  index: -1
+fan/blue1Lines
+  rotate: true
+  xy: 2313, 1880
+  size: 366, 618
+  orig: 366, 618
+  offset: 0, 0
+  index: -1
+fan/blue2Center sm
+  rotate: false
+  xy: 2294, 5
+  size: 166, 166
+  orig: 166, 166
+  offset: 0, 0
+  index: -1
+fan/blue2Cooler
+  rotate: false
+  xy: 2462, 67
+  size: 149, 149
+  orig: 149, 149
+  offset: 0, 0
+  index: -1
+fan/blue2Cooler sm
+  rotate: false
+  xy: 2915, 123
+  size: 136, 136
+  orig: 136, 136
+  offset: 0, 0
+  index: -1
+fan/blue2Group 3
+  rotate: false
+  xy: 1541, 529
+  size: 465, 218
+  orig: 465, 218
+  offset: 0, 0
+  index: -1
+fan/blue3Center
+  rotate: true
+  xy: 1976, 2
+  size: 161, 163
+  orig: 161, 163
+  offset: 0, 0
+  index: -1
+fan/blue3Cooler
+  rotate: false
+  xy: 682, 4
+  size: 138, 138
+  orig: 138, 138
+  offset: 0, 0
+  index: -1
+fan/blue3Lines
+  rotate: false
+  xy: 2750, 1593
+  size: 239, 285
+  orig: 239, 285
+  offset: 0, 0
+  index: -1
+fan/blueCenter
+  rotate: false
+  xy: 2619, 464
+  size: 226, 226
+  orig: 226, 226
+  offset: 0, 0
+  index: -1
+fan/blueCooler
+  rotate: false
+  xy: 2261, 337
+  size: 186, 187
+  orig: 186, 187
+  offset: 0, 0
+  index: -1
+fan/blueLines
+  rotate: true
+  xy: 2313, 1600
+  size: 278, 435
+  orig: 278, 435
+  offset: 0, 0
+  index: -1
+fan/green1Conroller
+  rotate: true
+  xy: 1976, 165
+  size: 359, 283
+  orig: 359, 283
+  offset: 0, 0
+  index: -1
+fan/green1Cooler
+  rotate: false
+  xy: 2613, 129
+  size: 149, 149
+  orig: 149, 149
+  offset: 0, 0
+  index: -1
+fan/greenCooler
+  rotate: true
+  xy: 2862, 776
+  size: 199, 200
+  orig: 199, 200
+  offset: 0, 0
+  index: -1
+fan/greenProcessor
+  rotate: false
+  xy: 1646, 135
+  size: 328, 392
+  orig: 328, 392
+  offset: 0, 0
+  index: -1
+fan/red1Center
+  rotate: false
+  xy: 2619, 692
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+fan/red1Cooler
+  rotate: true
+  xy: 2862, 575
+  size: 199, 200
+  orig: 199, 200
+  offset: 0, 0
+  index: -1
+fan/red1Lines
+  rotate: false
+  xy: 2309, 810
+  size: 308, 365
+  orig: 308, 365
+  offset: 0, 0
+  index: -1
+fan/redController
+  rotate: true
+  xy: 2318, 537
+  size: 271, 299
+  orig: 271, 299
+  offset: 0, 0
+  index: -1
+fan/redCooler
+  rotate: false
+  xy: 2764, 112
+  size: 149, 149
+  orig: 149, 149
+  offset: 0, 0
+  index: -1
+fan/yellowCenter
+  rotate: false
+  xy: 2141, 11
+  size: 151, 152
+  orig: 151, 152
+  offset: 0, 0
+  index: -1
+fan/yellowCooler
+  rotate: false
+  xy: 2933, 1944
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+fan/yellowLines
+  rotate: true
+  xy: 2694, 1178
+  size: 185, 285
+  orig: 185, 285
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 1779, 2
+  size: 131, 77
+  orig: 131, 77
+  offset: 0, 0
+  index: -1
+l_leg1
+  rotate: true
+  xy: 2801, 263
+  size: 149, 151
+  orig: 149, 151
+  offset: 0, 0
+  index: -1
+l_leg2
+  rotate: false
+  xy: 822, 22
+  size: 132, 109
+  orig: 132, 109
+  offset: 0, 0
+  index: -1
+l_leg3
+  rotate: false
+  xy: 2596, 1178
+  size: 80, 47
+  orig: 80, 47
+  offset: 0, 0
+  index: -1
+legs
+  rotate: true
+  xy: 2847, 414
+  size: 159, 199
+  orig: 159, 199
+  offset: 0, 0
+  index: -1
+m_leg1
+  rotate: false
+  xy: 2956, 1421
+  size: 106, 170
+  orig: 106, 170
+  offset: 0, 0
+  index: -1
+m_leg2
+  rotate: false
+  xy: 1067, 32
+  size: 100, 99
+  orig: 100, 99
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 1858, 3
+  size: 130, 97
+  orig: 130, 97
+  offset: 0, 0
+  index: -1
+r_leg1
+  rotate: true
+  xy: 2933, 2073
+  size: 173, 119
+  orig: 173, 119
+  offset: 0, 0
+  index: -1
+r_leg2
+  rotate: false
+  xy: 956, 25
+  size: 109, 106
+  orig: 109, 106
+  offset: 0, 0
+  index: -1
+r_leg3
+  rotate: false
+  xy: 2462, 2
+  size: 64, 42
+  orig: 64, 42
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 144
+  size: 886, 368
+  orig: 886, 368
+  offset: 0, 0
+  index: -1
