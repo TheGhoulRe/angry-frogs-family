@@ -16,7 +16,7 @@ function BodysSpine () {
     }, []);
   
     return <div style={bodySpineStyle()}>
-        <video src={Vid} id="player-container" style={img()}></video>
+        <video src={Vid} id="player-container" style={img()} loop={true}></video>
     </div>
 }
 
