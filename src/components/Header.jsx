@@ -1,12 +1,9 @@
-import {useState} from 'react';
 import Down from '../assets/Down.png';
 
 function Header({Key, globe, links, services, pages, langs}) {
     let {about, contact, signup} = links;
-    let [servicesToggle, setServicesToggle] = useState(false);
-    let [pagesToggle, setPagesToggle] = useState(false);
 
-    return <header style={{ padding: "0px" }}>
+    return <header style={{ padding: "0px", position: "absolute", top: "0px", width: "100%" }}>
         <div className="Icon">
             <div id="abbr" onClick={() => document.location.assign("/") }>AFF</div>
             <div id="full">ANGRY FROGS FAMILY</div>
@@ -14,14 +11,14 @@ function Header({Key, globe, links, services, pages, langs}) {
         
         <ul className="nav">
             <li onClick={() => document.location.assign(about) } className='item'>About</li>
-            <li onMouseOver={() => setServicesToggle(true)} onMouseLeave={() => setServicesToggle(false)}>
+            <li className='body'>
                 <div className='item'>
                     <div>
                         Services
                         <img src={Down} alt="" />
                     </div>
                 </div>
-                {servicesToggle && <div style={popup()}>
+                <div style={popup()} id="popup">
                     {
                         services.map((val, i) => {
                             return <div key={i} style={listItem()} onClick={() => document.location.assign(val[1]) }>
@@ -29,16 +26,16 @@ function Header({Key, globe, links, services, pages, langs}) {
                             </div>
                         })
                     }
-                </div>}
+                </div>
             </li>
-            <li onMouseOver={() => setPagesToggle(true)} onMouseLeave={() => setPagesToggle(false)}>
+            <li className='body'>
                 <div className='item'>
                     <div>
                         Pages
                         <img src={Down} alt="" />
                     </div>
                 </div>
-                { pagesToggle && <div style={popup()}>
+                <div style={popup()} id="popup">
                     {
                         pages.map((val, i) => {
                             return <div key={i} style={listItem()} onClick={() => document.location.assign(val[1]) }>
@@ -46,7 +43,7 @@ function Header({Key, globe, links, services, pages, langs}) {
                             </div>
                         })
                     }
-                </div>}
+                </div>
             </li>
             <li onClick={() => document.location.assign(contact) } className='item'>Contact</li>
         </ul>
@@ -95,7 +92,6 @@ function listItem() {
         cursor: "pointer",
         paddingTop: "10px",
         paddingBottom: "10px",
-        zIndex: "1000",
     }
 }
 

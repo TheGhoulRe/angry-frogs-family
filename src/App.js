@@ -31,8 +31,8 @@ function App() {
   return (
     <div className="App" style={app()}>
 
-      <Header {...state.header} />
       <Body {...state.body} />  {/* body */}
+      <Header {...state.header} />
       <NavUnderBody {...state.navUnderBody}/>     {/* navUnderBody */}
       <AnimationSection {...state.animationSection}/>   {/* animationSection */}
       <Team />      {/* teamView */}

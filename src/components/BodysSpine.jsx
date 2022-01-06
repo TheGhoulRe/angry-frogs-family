@@ -36,7 +36,6 @@ function bodySpineStyle() {
         height: "500px",
         diplay: "flex",
         justifyContent: "center",
-        // overflow: "hidden",
     }
 }
 

@@ -11,6 +11,7 @@ function Body({header1, header2, body, preText, otherImages}) {
     let [FrogsBanner] = otherImages;
 
     useEffect(() => {
+        document.getElementById("body").style.paddingTop = document.getElementsByTagName("header")[0].offsetHeight + "px";
     }, []);
 
     return (

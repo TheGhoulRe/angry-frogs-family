@@ -14,6 +14,14 @@
     }
 }
 
+.nav .body #popup {
+    display: none;
+}
+
+.nav .body:hover #popup {
+    display: block;
+}
+
 .nav .item:hover, .Intro .item:hover, .Intro button:hover {
     color: black;
     background-color: white;
