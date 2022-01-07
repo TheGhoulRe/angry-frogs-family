@@ -54,7 +54,7 @@ function initialState () {
         body: {
             header1: "COME JOIN TO THE",
             header2: "ANGRY FROGS FAMILY",
-            body: `The Angry Frog Famiglia is the umbrella organization for the Crypto City's five major Crypto Frog Mafia families. It was founded in 1931 by Ribbitore Froganzano following his victory in the Frog war.`,
+            body: `The Angry Frog Famiglia is the umbrella organization for the Crypto City's five major Crypto Frog Mafia families.`,
             preText: {
                 texts: ["Staking", "Whitepaper", "Metaverse"],
                 images: [Disks, Doc, M],
