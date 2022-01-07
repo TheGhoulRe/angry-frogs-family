@@ -11,12 +11,12 @@ function Roadmap({questions, answers, states, images, toggle, toggle2, points}) 
         <nav>
             {
                 fill(0, questions.length).map(i => {
-                    return <li key={i} style={questionList()}>
+                    return <li key={i} onClick={() => toggle(i) } style={questionList()}>
 
                         <div style={questionStyle()}>
                             <div style={container()}>
                                 <div>{questions[i]}</div>
-                                <div onClick={() => toggle(i) }><img src={!states[i] ? plus : minus} alt="" style={questionImg()}/></div>
+                                <div><img src={!states[i] ? plus : minus} alt="" style={questionImg()}/></div>
                             </div>
                             
                             {states[i] && <p style={answerText()}>{answers[i]}</p>}

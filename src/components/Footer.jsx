@@ -2,6 +2,10 @@ import NavItems from "./NavItems";
 
 function Footer({images, items, links}) {
 
+    let discordLink = "/";
+    let twitterLink = "/";
+    let facebookLink = "/";
+
     let {categories, usefulLinks, resources} = items;
     let [twitter, discord, facebook, email, forward] = images;
     let {privacyPolicy, t_and_c} = links;
@@ -11,9 +15,9 @@ function Footer({images, items, links}) {
             <div>
                 <h1 style={title()}>AFF</h1>
                 <div>
-                    <img src={twitter} alt="" />
-                    <img src={discord} alt="" />
-                    <img src={facebook} alt="" />
+                    <img src={twitter} alt="" onClick={() => document.location.assign(discordLink)} />
+                    <img src={discord} alt="" onClick={() => document.location.assign(twitterLink)} />
+                    <img src={facebook} alt="" onClick={() => document.location.assign(facebookLink)} />
                 </div><br />
                 <div>Get on the List</div>
                 <form style={emailSection()}>
