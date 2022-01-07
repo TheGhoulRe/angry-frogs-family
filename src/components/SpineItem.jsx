@@ -3,12 +3,18 @@ import Vid from "../assets/bigvid.mp4";
 
 function SpineItem () {
     useEffect(() => {
-        let t = setInterval(() => {
-            document.getElementById("player-container").oncanplaythrough = () => {
-                document.getElementById("player-container").play();
-                clearInterval(t);
+        try{
+            let player = document.getElementById("player-container")
+        
+            let t = setInterval(() => {
+                player.play();
+                
+            }, 1000);
+            
+            player.onplay = () => {
+                clearTimeout(t);
             }
-        }, 1000);
+        }catch(error) {}
     }, []);
   
     return <div id="background" style={bodySpineStyle()}>

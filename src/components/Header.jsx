@@ -11,7 +11,7 @@ function Header({Key, globe, links, services, pages, langs}) {
         
         <ul className="nav">
             <li onClick={() => document.location.assign(about) } className='item'>About</li>
-            <li className='body'>
+            <li className='body' onClick={handleClick}>
                 <div className='item'>
                     <div>
                         Services
@@ -28,7 +28,7 @@ function Header({Key, globe, links, services, pages, langs}) {
                     }
                 </div>
             </li>
-            <li className='body'>
+            <li className='body' onClick={handleClick}>
                 <div className='item'>
                     <div>
                         Pages
@@ -70,6 +70,14 @@ function Header({Key, globe, links, services, pages, langs}) {
         </div>
     </header>
 }
+
+function handleClick(e) {
+    if ( !e.currentTarget.classList.contains("bodyClicked") ){
+        e.currentTarget.classList.add("bodyClicked");
+    } else {
+        e.currentTarget.classList.remove("bodyClicked");
+    }
+} 
 
 function langText() {
     return {

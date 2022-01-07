@@ -23,7 +23,7 @@
     display: none;
 }
 
-.nav .body:hover #popup {
+.nav .body:hover #popup, .nav .bodyClicked #popup {
     display: block;
 }
 
