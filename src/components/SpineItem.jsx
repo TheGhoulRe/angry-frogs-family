@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Vid from "../assets/bigvid.mp4";
+import Img from "../assets/animationSection.svg";
 
 function SpineItem () {
     useEffect(() => {
@@ -18,7 +18,7 @@ function SpineItem () {
     }, []);
   
     return <div id="background" style={bodySpineStyle()}>
-        <video src={Vid} id="player-container" style={img()} loop={true}></video>
+        <img src={Img} alt="" id="player-container" style={img()} />
     </div>
 }
 
