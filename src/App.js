@@ -4,7 +4,7 @@ import Body from './components/Body';
 import NavUnderBody from './components/NavUnderBody';
 import AnimationSection from './components/AnimationSection';
 import Team from './components/Team';
-import StackingDevice from './components/StackingDevice';
+import StakingDevice from './components/StakingDevice';
 import StackingDeviceImg from './assets/StackingDevice.png';
 import './App.css';
 import { useEffect, useState } from 'react';
@@ -17,7 +17,7 @@ function App() {
   let [state, setState] = useState(initialState());
   
   useEffect(() => {
-    let IDs = ["navUnderBody", "animationSection", "teamView", "aniStackingDevice", "clubWelcome", "aniRoadmap", "footer"];
+    let IDs = ["navUnderBody", "animationSection", "teamView", "aniStakingDevice", "clubWelcome", "aniRoadmap", "footer"];
     IDs.forEach((val) => {
       document.getElementById(val).style.opacity = 0;
     });
@@ -36,7 +36,7 @@ function App() {
       <NavUnderBody {...state.navUnderBody}/>     {/* navUnderBody */}
       <AnimationSection {...state.animationSection}/>   {/* animationSection */}
       <Team />      {/* teamView */}
-      <StackingDevice stackingDeviceImg={StackingDeviceImg} />    {/* aniStackingDevice */}
+      <StakingDevice stackingDeviceImg={StackingDeviceImg} />    {/* aniStakingDevice */}
       <ClubWelcome {...state.clubWelcome}/>   {/* clubWelcome */}
       <RoadMap {...state.roadMaps} toggle={i => setState(toggle(i, state)) }  toggle2={i => setState(toggle2(i, state)) } />    {/* aniRoadmap */}
       <Footer {...state.footer}/>       {/* footer */}
@@ -47,7 +47,7 @@ function App() {
 }
 
 function somethingToDo(bottomPos) {
-  let IDs = ["navUnderBody", "animationSection", "teamView", "aniStackingDevice", "clubWelcome", "aniRoadmap", "footer"];
+  let IDs = ["navUnderBody", "animationSection", "teamView", "aniStakingDevice", "clubWelcome", "aniRoadmap", "footer"];
   let positions = IDs.map((val) => document.getElementById(val).offsetTop );
   
   positions.forEach((pos,i) => {

@@ -35,7 +35,7 @@ function Team () {
                 Buy on Opensea
             </button>
 
-            <h2>STACKING DEVICE</h2>
+            <h2>STAKING DEVICE</h2>
         </center>
     </div>
 }
