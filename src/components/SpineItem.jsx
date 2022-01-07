@@ -1,22 +1,7 @@
-import { useEffect } from "react";
 import Img from "../assets/animationSection.svg";
 
 function SpineItem () {
-    useEffect(() => {
-        try{
-            let player = document.getElementById("player-container")
-        
-            let t = setInterval(() => {
-                player.play();
-                
-            }, 1000);
-            
-            player.onplay = () => {
-                clearTimeout(t);
-            }
-        }catch(error) {}
-    }, []);
-  
+    
     return <div id="background" style={bodySpineStyle()}>
         <img src={Img} alt="" id="player-container" style={img()} />
     </div>
