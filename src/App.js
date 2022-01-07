@@ -5,7 +5,6 @@ import NavUnderBody from './components/NavUnderBody';
 import AnimationSection from './components/AnimationSection';
 import Team from './components/Team';
 import StakingDevice from './components/StakingDevice';
-import StackingDeviceImg from './assets/StackingDevice.png';
 import './App.css';
 import { useEffect, useState } from 'react';
 import initialState from './initialState';
@@ -36,7 +35,7 @@ function App() {
       <NavUnderBody {...state.navUnderBody}/>     {/* navUnderBody */}
       <AnimationSection {...state.animationSection}/>   {/* animationSection */}
       <Team />      {/* teamView */}
-      <StakingDevice stackingDeviceImg={StackingDeviceImg} />    {/* aniStakingDevice */}
+      <StakingDevice />    {/* aniStakingDevice */}
       <ClubWelcome {...state.clubWelcome}/>   {/* clubWelcome */}
       <RoadMap {...state.roadMaps} toggle={i => setState(toggle(i, state)) }  toggle2={i => setState(toggle2(i, state)) } />    {/* aniRoadmap */}
       <Footer {...state.footer}/>       {/* footer */}
