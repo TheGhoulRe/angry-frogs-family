@@ -6,17 +6,15 @@ import AnimationSection from './components/AnimationSection';
 import Team from './components/Team';
 import StakingDevice from './components/StakingDevice';
 import './App.css';
-import { useEffect, useState } from 'react';
-import initialState from './initialState';
+import { useEffect } from 'react';
 import ClubWelcome from './components/ClubWelcome';
 import RoadMap from "./components/Roadmap";
 import PreLoader from "./components/PreLoader";
 
 function App() {
-  let [state, setState] = useState(initialState());
   
   useEffect(() => {
-    let IDs = ["navUnderBody", "animationSection", "teamView", "aniStakingDevice", "clubWelcome", "aniRoadmap", "footer"];
+    let IDs = ["navUnderBody", "about", "teamView", "aniStakingDevice", "clubWelcome", "aniRoadmap", "footer"];
     IDs.forEach((val) => {
       document.getElementById(val).style.opacity = 0;
     });
@@ -30,15 +28,15 @@ function App() {
   return (
     <div className="App" style={app()}>
 
-      <Body {...state.body} />  {/* body */}
-      <Header {...state.header} />
-      <NavUnderBody {...state.navUnderBody}/>     {/* navUnderBody */}
-      <AnimationSection {...state.animationSection}/>   {/* animationSection */}
+      <Body />  {/* body */}
+      <Header />
+      <NavUnderBody />     {/* navUnderBody */}
+      <AnimationSection />   {/* animationSection */}
       <Team />      {/* teamView */}
       <StakingDevice />    {/* aniStakingDevice */}
-      <ClubWelcome {...state.clubWelcome}/>   {/* clubWelcome */}
-      <RoadMap {...state.roadMaps} toggle={i => setState(toggle(i, state)) }  toggle2={i => setState(toggle2(i, state)) } />    {/* aniRoadmap */}
-      <Footer {...state.footer}/>       {/* footer */}
+      <ClubWelcome />   {/* clubWelcome */}
+      <RoadMap />    {/* aniRoadmap */}
+      <Footer />       {/* footer */}
 
       <PreLoader />
     </div>
@@ -46,7 +44,7 @@ function App() {
 }
 
 function somethingToDo(bottomPos) {
-  let IDs = ["navUnderBody", "animationSection", "teamView", "aniStakingDevice", "clubWelcome", "aniRoadmap", "footer"];
+  let IDs = ["navUnderBody", "about", "teamView", "aniStakingDevice", "clubWelcome", "aniRoadmap", "footer"];
   let positions = IDs.map((val) => document.getElementById(val).offsetTop );
   
   positions.forEach((pos,i) => {
@@ -73,22 +71,6 @@ function app() {
   return {
     minWidth: "1110px",
   }
-}
-
-function toggle(i, state) {
-  const newStates = [...state.roadMaps.states];
-  newStates[i] = !newStates[i];
-  const newState = {...state};
-  newState.roadMaps.states = newStates;
-  return newState;
-}
-
-function toggle2(i, state) {
-  const newStates = [...state.roadMaps.points];
-  newStates[i][0] = !newStates[i][0];
-  const newState = {...state};
-  newState.roadMaps.points = newStates;
-  return newState;
 }
 
 export default App;

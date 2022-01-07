@@ -1,5 +1,22 @@
+import NFT from '../assets/NFT.png';
+import Tweet from "../assets/Tweet.svg";
+import People from '../assets/People.png';
+import Chat from '../assets/Chat.png';
 
-function NavUnderBody({title, firstSet, secondSet}) {
+function NavUnderBody() {
+
+    let title = "WHY YOU CHOOSING AFF?",
+        firstSet = {
+            images: [NFT, Chat, People, Tweet],
+            stats: ["15k", "90%", "+200k", "+100k"],
+            statName: ["NFTs Distributed", "Positive Feedback", "Followers", "Twitter Contest"],
+        },
+        secondSet = {
+            images: [People, Tweet, NFT, Chat,],
+            stats: ["+200k", "+100k", "15k", "90%",],
+            statName: ["Followers", "Twitter Contest", "NFTs Distributed", "Positive Feedback",],
+        };
+
     return (
         <div id="navUnderBody">
             <center>
@@ -41,8 +58,6 @@ function NavUnderBody({title, firstSet, secondSet}) {
 
 function cardsCards() {
     return {
-        width: "100px",
-        height: "150px",
         margin: "5px",
         padding: "10px",
         borderRadius: "0.4em",

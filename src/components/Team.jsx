@@ -12,6 +12,7 @@ import { useState } from "react";
 
 function Team () {
     let [oOpenSea, setOOpenSea] = useState(false);
+    
     return <div id="teamView">
         <center>
             <h2 style={titleStyle()}>MEET THE TEAM</h2>

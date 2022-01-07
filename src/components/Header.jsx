@@ -1,9 +1,33 @@
 import Down from '../assets/Down.png';
+import Key from '../assets/key.svg';
+import globe from '../assets/globe.svg';
 
-function Header({Key, globe, links, services, pages, langs}) {
+function Header() {
+
+    const  links = {
+        about: "#about",
+        contact: "#footer",
+        signup: "#teamView",
+    },
+    services = [
+        ["service1", "/"],
+        ["service2", "/"],
+        ["service3", "/"],
+    ],
+    pages = [
+        ["page1", "/"],
+        ["page2", "/"],
+        ["page3", "/"],
+    ],
+    langs = [
+        ["lang1", "/"],
+        ["lang2", "/"],
+        ["lang3", "/"],
+    ];
+
     let {about, contact, signup} = links;
 
-    return <header style={{ padding: "0px", position: "absolute", top: "0px", width: "100%" }}>
+    return <header style={headerStyling()}>
         <div className="Icon">
             <div id="abbr" onClick={() => document.location.assign("/") }>AFF</div>
             <div id="full">ANGRY FROGS FAMILY</div>
@@ -77,7 +101,16 @@ function handleClick(e) {
     } else {
         e.currentTarget.classList.remove("bodyClicked");
     }
-} 
+}
+
+function headerStyling() {
+    return {
+        padding: "0px",
+        position: "absolute",
+        top: "0px",
+        width: "100%"
+    }
+}
 
 function langText() {
     return {

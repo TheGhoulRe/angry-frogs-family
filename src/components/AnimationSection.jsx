@@ -1,10 +1,14 @@
-import {useRef, useEffect} from 'react'; 
 import SpineItem from './SpineItem';
 
-function AnimationSection({links}) {
+function AnimationSection() {
+
+    const links = {
+        join: "/",
+        roadmap: "/",
+    };
 
     return (
-        <div id="animationSection">
+        <div id="about">
             <SpineItem/>
             <div id="foreground">
                 <div id="invisibleLeft"></div>

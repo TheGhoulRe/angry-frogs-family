@@ -1,32 +1,54 @@
 import NavItems from "./NavItems";
 
-function Footer({images, items, links}) {
+import Discord from "../assets/Discord.svg";
+import Facebook from "../assets/Facebook.svg";
+import Twitter from "../assets/Tweet.svg";
+import Email from "../assets/Email.svg";
+import Forward from "../assets/Forward.svg";
 
-    let discordLink = "/";
-    let twitterLink = "/";
-    let facebookLink = "/";
+function Footer() {
 
-    let {categories, usefulLinks, resources} = items;
-    let [twitter, discord, facebook, email, forward] = images;
-    let {privacyPolicy, t_and_c} = links;
+    let categories = [
+            ["History", "/"],
+            ["Events", "/"],
+            ["Partners", "/"],
+            ["Payments", "/"],
+        ],
+        usefulLinks = [
+            ["Payment & Tax", "/"],
+            ["Terms of service", "/"],
+            ["My Account", "/"],
+            ["Discount", "/"],
+        ],
+        resources = [
+            ["Blog", "/"],
+            ["Whitepaper", "/"],
+            ["Reports", "/"],
+        ];
+
+    const discordLink = "/";
+    const twitterLink = "/";
+    const facebookLink = "/";
+
+    let privacyPolicy = "/", t_and_c = "/";
     
     return <footer style={footer()} id="footer">
         <div style={menus()}>
             <div>
                 <h1 style={title()}>AFF</h1>
                 <div>
-                    <img src={twitter} alt="" onClick={() => document.location.assign(discordLink)} />
-                    <img src={discord} alt="" onClick={() => document.location.assign(twitterLink)} />
-                    <img src={facebook} alt="" onClick={() => document.location.assign(facebookLink)} />
+                    <img src={Twitter} alt="" onClick={() => document.location.assign(discordLink)} />
+                    <img src={Discord} alt="" onClick={() => document.location.assign(twitterLink)} />
+                    <img src={Facebook} alt="" onClick={() => document.location.assign(facebookLink)} />
                 </div><br />
                 <div>Get on the List</div>
                 <form style={emailSection()}>
                     <span  style={emailIcon()}>
-                        <img src={email} alt="" />
+                        <img src={Email} alt="" />
                     </span>
                     <input type="text" placeholder="Email Address..." style={input()}/>
                     <button type="submit" style={button()}>
-                        <img src={forward} alt="" />
+                        <img src={Forward} alt="" />
                     </button>
                 </form>
             </div>

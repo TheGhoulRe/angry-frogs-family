@@ -143,24 +143,24 @@ header {
             #cards #card #type {
                 font-size: x-small;}
 
-#animationSection {
+#about {
     height: 565px;
     padding: 0%;
     margin: 0%;
     overflow: hidden;}
 
-    #animationSection #background {
+    #about #background {
         width: 100%;
         height: 565px;}
         
-        #animationSection #background #player-container {
+        #about #background #player-container {
             transform: scale(1.6);
             position: relative;
             top: 100px;
             height: 565px;
             border-radius: 0%;}
 
-    #animationSection #foreground {
+    #about #foreground {
         position: relative;
         top: -565px;
         width: 100%;
@@ -168,20 +168,20 @@ header {
         display: flex;
         justify-content: center;}
 
-        #animationSection #invisibleLeft {
+        #about #invisibleLeft {
             width: 50%;}
 
-        #animationSection #partiallyVisibleRight {
+        #about #partiallyVisibleRight {
             width: 50%;
             background-color: rgba(0, 0, 0, .5);
             color: white;
             padding: 50px;}
 
-            #animationSection #partiallyVisibleRight .Yes:hover {
+            #about #partiallyVisibleRight .Yes:hover {
                 background-color: #BB0A0B;
             }
 
-            #animationSection #partiallyVisibleRight .Yes {
+            #about #partiallyVisibleRight .Yes {
                 background-color: #DB2A2B;
                 transition: background 0.5s ease-in-out;
                 margin: 5px;
@@ -191,12 +191,12 @@ header {
                 width: 140px;
                 padding: 10px;}
     
-            #animationSection #partiallyVisibleRight .No:hover {
+            #about #partiallyVisibleRight .No:hover {
                 background-color: white;
                 color: black;
             }
             
-            #animationSection #partiallyVisibleRight .No {
+            #about #partiallyVisibleRight .No {
                 background-color: rgba(255, 255, 255, 0);
                 transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
                 color: white;

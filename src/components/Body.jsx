@@ -4,7 +4,21 @@ import HeaderBanner from "../assets/HeaderBanner.svg";
 import BodysSpine from './BodysSpine';
 import { useEffect } from 'react';
 
-function Body({header1, header2, body, preText, otherImages}) {
+import Disks from '../assets/Disks.png';
+import Doc from '../assets/Doc.png';
+import M from '../assets/M.png';
+
+function Body() {
+
+    const header1 = "COME JOIN TO THE",
+          header2 = "ANGRY FROGS FAMILY",
+          body = `The Angry Frog Famiglia is the umbrella organization for the Crypto City's five major Crypto Frog Mafia families.`,
+          preText = {
+              texts: ["Staking", "Whitepaper", "Metaverse"],
+              images: [Disks, Doc, M],
+              colors: ["#008FFB", "#CD2AFD", "#F77E21"],
+              links: ["/", "/", "/"],
+          }
 
     let {texts, images, colors, links} = preText;
 
